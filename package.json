@@ -1,0 +1,55 @@
+{
+  "name": "@fabalous/debug",
+  "version": "0.0.1",
+  "scripts": {
+    "node-watch": "gulp runtime-node-watch",
+    "node-build": "gulp runtime-node-build",
+    "web-watch": "gulp runtime-web-watch",
+    "web-build": "gulp runtime-web-build",
+    "test": "jest --no-cache --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@fabalous/core": "^0.5.31",
+    "@fabalous/runtime-node": "^0.0.50",
+    "@fabalous/runtime-web": "^0.2.89",
+    "@fabalous/test-jest": "^0.0.1",
+    "socket.io": "^2.0.4",
+    "@types/socket.io": "^1.4.31",
+    "pouchdb": "^6.4.1",
+    "@types/pouchdb": "^6.3.2",
+    "material-ui": "^1.0.0-beta.25",
+    "react-tap-event-plugin": "^3.0.2"
+  },
+  "fabalous": {
+    "codeStructure": {
+      "event": "${moduleName}/event/${fileName}Event.ts",
+      "mediator": "${moduleName}/mediator/${fileName}Mediator.ts",
+      "nodeCommand": "${moduleName}/command/node/${fileName}NodeCommand.ts",
+      "webCommand": "${moduleName}/command/web/${fileName}WebCommand.ts"
+    }
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": ".*\\Spec.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/**/*.d.ts"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ],
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js"
+  }
+}
