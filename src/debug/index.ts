@@ -1,14 +1,12 @@
-console.log("test");
-
 module.exports.default = {
-    mediator: require("./web/DebugWebMediator").default,
+    mediator: require("./DebugWebMediator").default,
     initEvent: require("./event/InitDebugEvent").default
 };
 
-
+/*
 if (process.env.FABALOUS_RUNTIME == "node"){
     module.exports = {
-      mediator: require("./node/DebugNodeMediator").default,
+      mediator: require("./DebugNodeMediator").default,
       initEvent: require("./event/InitDebugEvent").default
     };
 }
@@ -30,3 +28,4 @@ if (process.env.FABALOUS_RUNTIME == "native"){
         initEvent: require("./event/InitDebugEvent").default
     };
 }
+*/

@@ -1,7 +1,8 @@
-import LogDebugEvent from "./debug/event/LogDebugEvent";
 /**
  * Created by creativecode on 25.01.17.
  */
+import {LogDebugEvent} from "./debug/event";
+
 
 class FabalousDebug{
     FABA_DEBUG_LEVEL:number = 1;

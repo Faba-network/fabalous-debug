@@ -22,14 +22,6 @@
       "dom"
     ]
   },
-  "awesomeTypescriptLoaderOptions": {
-    "transpileModule": true,
-    "forkChecker": true,
-    "forkCheckerSilent": false,
-    "useBabel": false,
-    "useCache": true,
-    "skipDeclarationFilesCheck": true
-  },
   "exclude": [
     "node_modules"
   ]

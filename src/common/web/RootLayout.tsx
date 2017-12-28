@@ -11,7 +11,20 @@ export default class RootLayout extends FabaWebBaseComponent<IRootLayoutProps>{
         super(props);
     }
 
-    render(): ReactElement<any> {
+    render() {
+        if (process.env.NODE_ENV == "development") {
+            let AppContainer = require('react-hot-loader').AppContainer;
+            return (
+                <AppContainer>
+                    {this.renderContent()}
+                </AppContainer>
+            );
+        } else {
+            return this.renderContent();
+        }
+    }
+
+    renderContent(): ReactElement<any> {
         return(
             <div>
                 {this.props.childs}

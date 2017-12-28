@@ -1,3 +1,0 @@
-describe("InitDebug Spec", function() {
-
-});

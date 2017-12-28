@@ -14,12 +14,13 @@
     "@fabalous/runtime-node": "^0.0.50",
     "@fabalous/runtime-web": "^0.2.89",
     "@fabalous/test-jest": "^0.0.1",
-    "socket.io": "^2.0.4",
-    "@types/socket.io": "^1.4.31",
-    "pouchdb": "^6.4.1",
     "@types/pouchdb": "^6.3.2",
+    "@types/socket.io": "^1.4.31",
     "material-ui": "^1.0.0-beta.25",
-    "react-tap-event-plugin": "^3.0.2"
+    "pouchdb": "^6.4.1",
+    "react-tap-event-plugin": "^3.0.2",
+    "socket.io": "^2.0.4",
+    "typestyle": "^1.5.1"
   },
   "fabalous": {
     "codeStructure": {

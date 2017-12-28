@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 
 __workDir = __dirname;
-__devTool = 'eval-source-map';
+__devTool = 'eval';
 __host = "localhost";
 __port = 7010;
 
